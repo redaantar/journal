@@ -1,19 +1,11 @@
-import 'package:flutter/material.dart';
+class Test {
+  String name;
+  Test(this.name);
 
-class MyJournal extends StatelessWidget {
-  const MyJournal({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Text('Journal'),
-            ],
-          ),
-        ),
-      ),
-    );
+  Map<String, (int, String)> printName() {
+    return {
+      'name': (10, "Hello")
+    };
   }
+
 }
